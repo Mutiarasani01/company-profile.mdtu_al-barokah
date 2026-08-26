@@ -831,32 +831,24 @@ footer ul li a:hover{color:var(--gold-light);}
   }
 }
 /* ---------- Perbaikan Header di HP ---------- */
-@media (max-width: 768px) {
-  .logo-text .name {
-    font-size: 16px !important;
-    font-weight: 700 !important;
-    color: #fff !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+/* ---------- Sidebar Menu di HP — Latar Hijau ---------- */
+@media (max-width: 980px) {
+  /* Latar belakang seluruh menu samping */
+  header nav#mainNav,
+  header nav#mainNav ul {
+    background-color: #00552b !important; /* Hijau tua sesuai header */
+    background: #00552b !important;
   }
-  .logo-text .tagline {
-    font-size: 11px !important;
-    color: #f0e6cc !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+
+  /* Warna teks menu jadi PUTIH agar terlihat jelas */
+  header nav#mainNav ul li a {
+    color: #ffffff !important;
   }
-  .logo {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-  }
-  .logo-mark img {
-    width: 42px !important;
-    height: 42px !important;
-  }
-  header {
-    padding: 10px 15px !important;
+
+  /* Efek saat ditekan / aktif */
+  header nav#mainNav ul li a:hover,
+  header nav#mainNav ul li a.active {
+    color: #ffdd70 !important; /* Warna emas/kuning */
+    background-color: rgba(255,255,255,0.1) !important;
   }
 }
