@@ -830,3 +830,33 @@ footer ul li a:hover{color:var(--gold-light);}
     height:300px;
   }
 }
+/* ---------- Perbaikan Header di HP ---------- */
+@media (max-width: 768px) {
+  .logo-text .name {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .logo-text .tagline {
+    font-size: 11px !important;
+    color: #f0e6cc !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  .logo-mark img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+  header {
+    padding: 10px 15px !important;
+  }
+}
